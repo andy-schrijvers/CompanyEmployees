@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>CompanyEmployees</name>
+    </assembly>
+    <members>
+        <member name="M:CompanyEmployees.Controllers.CompaniesController.GetCompanies(Entities.RequestFeatures.CompanyParameters)">
+            <summary>
+            Gets the list of all companies
+            </summary>
+            <param name="companyParameters"></param>
+            <returns>The companies list</returns>
+            <response code="200">The companies list</response>
+            <response code="401">Unauthorized</response>      
+        </member>
+        <member name="M:CompanyEmployees.Controllers.CompaniesController.GetCompany(System.Guid)">
+            <summary>
+            Gets a company by the companyId
+            </summary>
+            <param name="companyId"></param>
+            <returns>The companie with a specific companyId</returns>
+        </member>
+        <member name="M:CompanyEmployees.Controllers.CompaniesController.CreateCompany(Entities.DataTransferObjects.CompanyForCreationDto)">
+            <summary>
+            Creates a newly created company
+            </summary>
+            <param name="company"></param>
+            <returns>A newly created company</returns>
+            <response code="201">Returns the newly created company</response>
+            <response code="400">If the item is null</response>
+            <response code="422">If the model is invalid</response>
+        </member>
+    </members>
+</doc>
